@@ -47,7 +47,7 @@
     </div>
     <div class="title-bar">
       <span>접근성을 잘 지원합시다! </span>
-      <button id="setting">설정</button>
+      <button id="setting">ㅅ</button>
     </div>
     <span style="line-height: 23px">
       Tab navigation을 편리하게 하기 위해서, Dialog 내에 있는 상호작용 가능한 모든 element들은 Tab키로
@@ -58,7 +58,7 @@
       <div class="hello-world">Hello, world!</div>
       <input type="radio" name="option">Hello!
       <input type="radio" name="option">Bye!
-      <div id="close" class="fancy-button">닫기</div>
+      <div id="close" class="fancy-button" tabindex="0">닫기</div>
     </dialog>
     <script>
       let settingButton = document.getElementById('setting');
@@ -80,6 +80,7 @@
       
       function closeDialog() {
         dialog.close();
+	title-bar.focus();
       }
     </script>
   </body>
